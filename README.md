@@ -397,6 +397,9 @@ now that our states all update to the color we want, let's make them cycle throu
 <sub>./src/App.js</sub>
 ```js
 //...
+const colors = ['red', 'blue', 'green'];
+
+//...
       [event.target.id]: colors[ (colors.indexOf(this.state[event.target.id]) + 1) % colors.length ],
 
 //...
